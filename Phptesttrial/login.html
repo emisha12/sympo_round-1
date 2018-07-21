@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type = "text/css" href = "searchbar.css" >
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+.login-back{
+	background-image:url("pictures\group-of-smiling-students-standing.jpg");
+	background_position: bottom;
+	background-repeat:no-repeat;
+	height:100%;
+}
+</style>
+</head>
+<body background="pictures/group-of-smiling-students-standing.jpg">
+<center><h2>Modal Login Form</h2>
+<h3>Welcome to the world's largest Online Exam portal</h3></center>
+<marquee>Tests on all topics!!!!  At affordable price!!!!!!</marquee>
+<br><br>
+
+
+<div class="icon-bar">
+  <a class="active" href="welcome.html"><i class="fa fa-home">   home</i></a>   
+  <a href="contact.html"><i class="fa fa-envelope">   Contact us</i></a> 
+  <a href="about.html"><i class="fa fa-bullhorn"> About</i></a>
+  <a href="price.html "><i class="fa fa-money"> Pricing</i></a>
+ <a href="login.html "><i class="fa fa-key"> Login</i></a>
+ <a href="register.html"><i class="fa fa-user"> Register</i></a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div class="login-back">
+<form action="index.php" style="max-width:500px;margin:auto" method="post">
+  <h2>Login</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <button type="submit" class="btn">Login</button>
+</form><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+
